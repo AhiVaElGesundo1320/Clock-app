@@ -30,12 +30,6 @@ export const Main = () => {
         <div>
           <Crono />
         </div>
-        <div>
-          <Clock />
-        </div>
-        <div>
-          <Clock />
-        </div>
       </Carousel>
     </div>
   );
