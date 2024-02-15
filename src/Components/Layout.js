@@ -1,20 +1,25 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
 export const Layout = () => {
   return (
     <div>
-       {/*<nav>
-        <ul>
-            <li>
-                <Link end to={'/clock'}>Cloc</Link>
+      <Outlet />
+      <nav className=" flex flex-row items-center content-center justify-center">
+        <ul className="w-screen flex flex-row justify-evenly">
+          {" "}
+          <Link end to={"/clock"}>
+            <li className="my-3 w-32 rounded-lg border-2 border-cyan-950 hover:bg-gradient-to-tr from-teal-700 to-cyan-900 hover:cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300">
+              <span class="material-symbols-outlined">schedule</span>
             </li>
-            <li>
-                <Link to={'crono'}>Crono</Link>
+          </Link>
+          <Link to={"/crono"}>
+            <li className="my-3 w-32 rounded-lg border-2 border-cyan-950 hover:bg-gradient-to-tr from-teal-700 to-cyan-900 hover:cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300">
+              <span class="material-symbols-outlined">timelapse</span>
             </li>
+          </Link>
         </ul>
-  </nav> */}
+      </nav>
     </div>
-  )
-}
+  );
+};

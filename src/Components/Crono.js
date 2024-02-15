@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Components/styles/cronometro.css";
-import { Nav } from "./Navigation/Navigation";
+
 
 export const Crono = () => {
   const [isActive, setIsActive] = useState(false);
@@ -39,9 +39,7 @@ export const Crono = () => {
   console.log(time);
   return (
     <div className="flex flex-col items-center content-center justify-center ">
-      <Nav to={'/clock'}>
-        Clock
-      </Nav>
+      
       <div className="letter bg-gradient-to-tr from-teal-700 to-cyan-900  h-72 w-56 rounded-lg flex flex-col items-center justify-center content-center">
         <div className="hora text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-cyan-300">
           <p>{time}</p>
@@ -49,7 +47,7 @@ export const Crono = () => {
         <div className="flex">
           {isActive === false ? (
             <button
-              className="mx-3 text-xl  text-slate-300"
+            className="myButton my-3 w-32 rounded-lg border-2 border-cyan-950 hover:bg-gradient-to-tr from-teal-700 to-cyan-900 hover:cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
               disabled={isActive}
               onClick={startCrono}
             >
@@ -59,7 +57,7 @@ export const Crono = () => {
           {isActive === true ? (
             <div className=" letter flex flex-col text-xl  text-slate-300">
               <button
-                className="my-3 w-32 rounded-lg bg-cyan-950"
+                className="my-3 w-32 rounded-lg bg-cyan-950 disabled:bg-opacity-50 hover:cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
                 disabled={isPaused === false}
                 onClick={handleReset}
               >
@@ -67,7 +65,7 @@ export const Crono = () => {
               </button>
 
               <button
-                className="my-3  w-32 rounded-lg bg-cyan-950"
+                className="my-3  w-32 rounded-lg bg-cyan-950 hover:cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300"
                 onClick={stopCrono}
               >
                 Stop
