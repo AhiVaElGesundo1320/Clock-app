@@ -4,6 +4,7 @@ import { Layout } from './Layout'
 import { Main } from './Main'
 import { Crono } from './Crono'
 import { Clock } from './Clock'
+import { Temporizador } from './Temporizador'
 
 
 export const Navigation = () => {
@@ -15,7 +16,7 @@ export const Navigation = () => {
                     <Route index path='main' element={<Main />}/>
                     <Route path='clock' element={<Clock />}/>
                     <Route path='crono' element={<Crono />}/>
-                   
+                    <Route path='temporizador' element={<Temporizador />}/>
                 </Route>
             </Routes>
         </BrowserRouter>
