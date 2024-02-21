@@ -12,7 +12,7 @@ export const Clock2 = () => {
   }, []);
 
   return (
-    <div className="mt-9">
+    <div className="mt-9 mian-div">
       <div className="clock">
         <div
           className="hour_hand absolute h-11 w-1"
@@ -21,7 +21,7 @@ export const Clock2 = () => {
           }}
         />
         <div
-          className="min_hand absolute h-14 w-0.5"
+          className="min_hand absolute h-14 w-0.5 dark:bg-cyan-300 bg-cyan-900"
           style={{
             transform: `rotateZ(${time.getMinutes() * 6}deg)`,
           }}

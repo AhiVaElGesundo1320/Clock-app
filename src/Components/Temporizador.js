@@ -52,7 +52,7 @@ export const Temporizador = () => {
   };
   return (
     <div className="main-div flex flex-col items-center content-center justify-center ">
-      <div className="bg-gradient-to-tr from-teal-700 to-cyan-900  h-72 w-56 rounded-lg flex flex-col items-center justify-center content-centerm">
+      <div className="bg-gradient-to-r from-teal-300 to-cyan-500 dark:bg-gradient-to-tr dark:from-teal-700 dark:to-cyan-900  h-72 w-56 rounded-lg flex flex-col items-center justify-center content-centerm">
         <div className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-cyan-300">
           <h3>
             {time === 0 ? "Time over" : <div >Countdown: {format(time)}</div>}

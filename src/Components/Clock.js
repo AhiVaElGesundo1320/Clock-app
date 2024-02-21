@@ -35,13 +35,13 @@ export const Clock = () => {
 
   return (
     <div className=" main-div flex flex-col items-center justify-center content-center">
-      <div className="  bg-gradient-to-r from-teal-700 to-cyan-900  h-72 w-56 rounded-lg flex flex-col items-center justify-center content-center">
-        <div className="text-slate-300 text-xl flex flex-row justify-center">
+      <div className=" bg-gradient-to-r from-teal-300 to-cyan-500 dark:bg-gradient-to-r dark:from-teal-700 dark:to-cyan-900  h-72 w-56 rounded-lg flex flex-col items-center justify-center content-center">
+        <div className="text-teal-700 dark:text-slate-300 text-xl flex flex-row justify-center">
           <h1>{fecha.getMonth()}/</h1>
           <h1>{fecha.getDate()}/</h1>
           <h1>{fecha.getFullYear()}</h1>
         </div>
-        <div className="text-orbitron text-slate-300 text-xl font-extrabold my-3">
+        <div className="text-orbitron text-teal-700 dark:text-slate-300 text-xl font-extrabold my-3">
           {" "}
           {/*day */}
           <h2 className="text-xl font-extrabold">{day}</h2>
