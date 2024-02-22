@@ -30,6 +30,21 @@ export const Clock = () => {
     "Saturday",
     "Sunday",
   ];
+  const months = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
+  let month = months[fecha.getMonth()];
   let day = days[fecha.getDay()];
   console.log(day);
 
@@ -37,7 +52,7 @@ export const Clock = () => {
     <div className=" main-div flex flex-col items-center justify-center content-center">
       <div className=" bg-gradient-to-r from-teal-300 to-cyan-500 dark:bg-gradient-to-r dark:from-teal-700 dark:to-cyan-900  h-72 w-56 rounded-lg flex flex-col items-center justify-center content-center">
         <div className="text-teal-700 dark:text-slate-300 text-xl flex flex-row justify-center">
-          <h1>{fecha.getMonth()}/</h1>
+          <h1>{month}/</h1>
           <h1>{fecha.getDate()}/</h1>
           <h1>{fecha.getFullYear()}</h1>
         </div>
